@@ -75,3 +75,22 @@ def three_out_four(a, b)
 end
 
 # one_off "1234", ["1234","5678", "9012", "5555"]
+def compare(a, b)
+	matches = []
+	index_position = 0
+	count = 0
+	
+	b.each do |winning_ticket|
+		count = 0
+		index_position = 0
+		a.length.times do 
+			if a[index_position] == winning_ticket[index_position]
+				count += 1
+			end
+			index_position += 1
+		end
+
+		matches << count
+	end
+ matches
+end
