@@ -69,8 +69,8 @@ def three_out_four(a, b)
 		end
 	end
 
-	if count == a.length - 1	
-end
+	# if count == a.length - 1	
+# end
  matches
 end
 

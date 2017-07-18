@@ -72,5 +72,11 @@ class TestClose_BNC < Minitest::Test
     	winning_numbers = ["135792","777677","135701"]
     	assert_equal(["135792","135701"], three_out_four(my_number, winning_numbers))
     end
+
+   def test_short_in_winning_1
+    	my_number = "135791"
+    	winning_numbers = ["135792","7777","135701"]
+    	assert_equal(["135792","135701"], three_out_four(my_number, winning_numbers))
+    end
 end
 
